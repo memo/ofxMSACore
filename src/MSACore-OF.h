@@ -51,7 +51,12 @@ namespace msa {
 	
 	inline void drawString(string s, float x, float y)				{	ofDrawBitmapString(s, x, y); }
 	
-	
+    
+    inline float clamp(float a, float min, float max) {
+        return ofClamp(a, min, max);
+    }
+    
+    
 	class Rand {
 	public:
 		

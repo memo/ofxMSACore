@@ -1,6 +1,6 @@
 #pragma once
 
-#define MSA	cinder // so cinder namespaces are also accessible within MSA
+#define msa	cinder // so cinder namespaces are also accessible within MSA
 
 
 #include "cinder/Cinder.h"
@@ -16,7 +16,7 @@
 
 using namespace std;
 
-namespace MSA {
+namespace msa {
 	
 #define MSA_HOST_SUFFIX		"-Cinder"
 	
@@ -49,5 +49,10 @@ namespace MSA {
 	inline Vec2f getWindowSize()									{	return ci::app::getWindowSize(); }
 	inline Vec2f getWindowCenter()									{	return ci::app::getWindowCenter(); }
 	
-	inline void drawString(string s, float x, float y)				{	return;  /* todo */ }	
+	inline void drawString(string s, float x, float y)				{	return;  /* todo */ }
+    
+    inline float clamp(float a, float min, float max) {
+        return constrain(a, min, max);
+    }
+
 }

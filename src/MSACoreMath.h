@@ -85,10 +85,7 @@ namespace msa {
 	bool inRange(T a, T min, T max) {
 		return (a >= min) && (a <= max);
 	}
-    
-    inline float clamp(float a, float min, float max) {
-        return ofClamp(a, min, max);
-    }
+
     
 	
 }
