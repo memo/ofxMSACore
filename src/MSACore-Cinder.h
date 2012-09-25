@@ -1,6 +1,6 @@
 #pragma once
 
-#define msa	cinder // so cinder namespaces are also accessible within MSA
+//#define msa	cinder // so cinder namespaces are also accessible within MSA
 
 
 #include "cinder/Cinder.h"
