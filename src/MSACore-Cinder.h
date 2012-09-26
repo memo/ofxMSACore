@@ -37,6 +37,12 @@ namespace msa {
 #if defined (CINDER_GLES)
 #define MSA_TARGET_OPENGLES
 #endif
+    
+    typedef ci::Vec2f         Vec2f;
+    typedef ci::Vec3f         Vec3f;
+    typedef ci::Vec4f         Vec4f;
+    typedef ci::ColorA         Color;
+    
 	
 	inline string dataPath(string path, bool absolute = false)		{	return "todo";	}
 	
