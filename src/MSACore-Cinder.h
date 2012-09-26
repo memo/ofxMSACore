@@ -58,7 +58,7 @@ namespace msa {
 	inline void drawString(string s, float x, float y)				{	return;  /* todo */ }
     
     inline float clamp(float a, float min, float max) {
-        return constrain(a, min, max);
+        return ci::constrain(a, min, max);
     }
 
 }
